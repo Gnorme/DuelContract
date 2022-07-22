@@ -1,0 +1,15 @@
+{
+  "name": "vote_contract",
+  "version": "1.0.0",
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "@as-pect/cli": "^6.2.4",
+    "near-sdk-as": "^3.2.3"
+  },
+  "scripts": {
+    "build": "asb --target debug",
+    "build:release": "asb",
+    "test": "yarn build:release && npx asp --verbose --nologo"
+  }
+}
